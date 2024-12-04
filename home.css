@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", serif;
+    background:linear-gradient(to  left  , rgba(255,255,255,0) , white);
+    position: relative;
+}
+.font{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -70px !important;
+}
+.carousel-inner {
+    transition: transform 5s ease-in-out !important; /* 1.5 seconds duration */
+  }
+.boot{
+    overflow: hidden;
+    width:400px;
+    padding:20px;
+    background:linear-gradient(to  left  , rgba(255,255,255,0) , rgb(118, 100, 223),rgb(80, 138, 233));
+    border-right:none;
+}
+.doot{
+    overflow: hidden;
+    width:400px;
+    padding:20px;
+    background:linear-gradient(to  left  , rgba(255,255,255,0) ,rgb(226, 245, 83), rgb(80, 138, 233));
+    border-right:none;
+}
+.boot:hover{
+    opacity:0.6;
+    color:white;
+}
+.design{
+    overflow:hidden;
+    position:absolute;
+    bottom:-50px;
+    left:33px;
+    height:23px;
+    margin-right:80px;
+    color:rgb(76, 16, 219);
+    animation:2s direction ease-in-out infinite;
+}
+@keyframes direction {
+    from{
+        width:0;
+    }
+    to{
+        width:20%;
+    }
+}
+.picture{
+    background:url("man.png") no-repeat center center/cover ;
+    margin-top:80px;
+    margin-left:200px;
+    overflow:hidden;
+    height:80vh;
+    width:80%;
+    
+}
+.produce{
+    z-index:2;
+}
+.pine{
+    position:relative;
+    top: 0;
+    border:solid 1px black;
+    z-index:3;
+    box-shadow:-30px 30px 30px rgba(0,0,0,3),30px -30px 30px rgba(0,0,0,3) ;
+}
+.pine:before{
+    position:absolute;
+    top:0;
+    content:"";
+    width:100%;
+    z-index:-1;
+    height:80vh;
+    filter: blur(20px);
+}
+.pine::after{
+    position:absolute;
+    top:0;
+    content:"";
+    width:100%;
+    z-index:-1;
+    height:80vh;
+    filter: blur(20px);
+}
+.pine:after{
+    box-shadow:-30px 30px 0px rgb(255, 254, 254,1),30px -30px 0px rgb(255, 255, 255,5);
+}
+.pine:before{
+    box-shadow:-30px 30px 30px rgba(255,255,255,1),30px -30px 30px rgb(242, 241, 241) ;
+
+   /* background:linear-gradient(235deg,rgba(225,225,225,0),rgb(138, 138, 165),rgb(157, 174, 157),rgb(190, 190, 163));*/
+}
+@media (max-width:700px) {
+    .doot{
+        overflow: hidden;
+        width:350px;
+        padding:20px;
+        background:linear-gradient(to  right  , rgba(255,255,255,0) ,rgb(226, 245, 83), rgb(80, 138, 233));
+        border-left:none;
+    }
+    .boot{
+        overflow: hidden;
+        width:350px;
+        padding:20px;
+        background:linear-gradient(to  right , rgba(255,255,255,0) , rgb(206, 201, 232),rgb(119, 234, 245));
+        border-left:none;
+    }
+    .picture{
+        background:url("man.png") no-repeat center center/cover ;
+        margin-top:80px;
+        margin-left:50px;
+        overflow:hidden;
+        height:80vh;
+        width:80%;
+        
+    }
+    .pine{
+        position:relative;
+        border:none;
+        top: 0;
+        z-index:3;
+        box-shadow:-30px 30px 30px rgba(0,0,0,6),0px -10px 10px rgba(0,0,0,10);
+    }
+    .pine:before{
+        display: none;
+    }
+    .pine::after{
+        display: none;
+    }
+    .pine:after{
+       display: none;
+    }
+    .pine:before{
+       display: none;
+    
+       /* background:linear-gradient(235deg,rgba(225,225,225,0),rgb(138, 138, 165),rgb(157, 174, 157),rgb(190, 190, 163));*/
+    }
+    .design{
+        overflow:hidden;
+        position:absolute;
+        bottom:-80px;
+        left:33px;
+        margin-right:80px;
+        color:rgb(10, 2, 82);
+        animation:5s direction ease-in-out infinite;
+    }
+    @keyframes direction {
+        from{
+            width:0;
+        }
+        to{
+            width:50%;
+        }
+}
+    .pine{
+        line-height:1.5;
+    }
+}
